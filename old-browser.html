@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Project1</title>
+    <meta charset="utf-8"/>
+
+    <link rel="stylesheet" href="css/screen.css"/>
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href='http://fonts.googleapis.com/css?family=PT+Sans+Narrow&subset=latin,cyrillic-ext' rel='stylesheet'
+          type='text/css'>
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="old-browser-wrap">
+    <ul class="browsers-list">
+        <li><a href="https://www.google.ru/chrome/browser/desktop/index.html" target="_blank"><img src="img/browsers/chrome.png" alt="Chrome"/></a></li>
+        <li><a href="http://windows.microsoft.com/ru-ru/internet-explorer/download-ie" target="_blank"><img src="img/browsers/ie.png" alt="IE"/></a></li>
+        <li><a href="http://www.opera.com/ru/computer/windows" target="_blank"><img src="img/browsers/opera.png" alt="Opera"/></a></li>
+        <li><a href="https://support.apple.com/downloads/safari" target="_blank"><img src="img/browsers/safari.png" alt="Safari"/></a></li>
+        <li><a href="https://www.mozilla.org/ru/firefox/new/" target="_blank"><img src="img/browsers/firefox.png" alt="Firefox"/></a></li>
+    </ul>
+    <section>
+        <h1>Обновите браузер</h1>
+
+        <p>
+            <span>Просматриваемый вами сайт правильно работает только в современных браузерах.</span>
+            <span>Обновите свой браузер для увелечения безопасности и комфортной работы.</span>
+            <span> Вы можете выбрать один из представленных ниже браузеров.</span>
+            <span>  Если все же решите продолжить просмотр, <a href="/">нажмите сюда</a></span></p>
+    </section>
+</div>
+
+<script>
+    var wHeight = $(window).height();
+    var oldHeight = $('.old-browser-wrap').height();
+    var oldPadd = wHeight / 2 - parseInt(oldHeight) / 2;
+    $('.old-browser-wrap').css('padding-top', oldPadd + 'px');
+
+    if ($.browser.msie) {
+        //код только для ИЕ любой версии - изменения стилей, фиксируем баги ИЕ здесь!
+        alert("this is code for IE only!");
+    }
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+		

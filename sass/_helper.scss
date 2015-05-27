@@ -1,0 +1,27 @@
+$icons: sprite-map("sprite/*.png"); // define a sprite map
+
+@mixin get-sprite($map, $sprite, $repeat: no-repeat, $height: true, $width: true) {
+	$sprite-image: sprite-file($map, $sprite);
+	$sprite-map: sprite-url($map);
+	$sprite-position: sprite-position($map, $sprite);
+	background: $sprite-map $sprite-position $repeat;
+	@if $height == true {
+		$sprite-height: image-height($sprite-image);
+		height: $sprite-height; }
+
+	@if $width == true {
+		$sprite-width: image-width($sprite-image);
+		width: $sprite-width; }
+}
+
+/*  @include get-sprite($icons, download); */
+
+
+@mixin centered() {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+%centered {
+  @include centered();
+}

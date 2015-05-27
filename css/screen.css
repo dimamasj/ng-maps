@@ -1,0 +1,180 @@
+/* line 1, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  color: inherit;
+  vertical-align: baseline;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+/* line 24, ../sass/_reset.scss */
+input, textarea {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 29, ../sass/_reset.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 33, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 38, ../sass/_reset.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* line 43, ../sass/_reset.scss */
+p strong, p b {
+  font-weight: bold;
+}
+
+/* line 47, ../sass/_reset.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+
+/* line 54, ../sass/_reset.scss */
+blockquote, q {
+  quotes: "" "";
+}
+
+/* line 58, ../sass/_reset.scss */
+abbr, acronym {
+  border: 0;
+}
+
+/* line 62, ../sass/_reset.scss */
+nav, header, footer, section, article, aside, div {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 68, ../sass/_reset.scss */
+figure {
+  margin: 0;
+}
+
+/* line 72, ../sass/_reset.scss */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+/* line 2, ../sass/_typography.scss */
+.wysi__content p {
+  padding: 5px 0;
+}
+
+/* line 7, ../sass/_typography.scss */
+.left-text {
+  text-align: left;
+}
+
+/* line 11, ../sass/_typography.scss */
+.right-text {
+  text-align: right;
+}
+
+/* line 15, ../sass/_typography.scss */
+.justify-text {
+  text-align: justify;
+}
+
+/* line 19, ../sass/_typography.scss */
+.center-text {
+  text-align: center;
+}
+
+/*  @include get-sprite($icons, download); */
+/* line 1, ../sass/_oldbrowser.scss */
+.old-browser-wrap {
+  width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+/* line 5, ../sass/_oldbrowser.scss */
+.old-browser-wrap .browsers-list {
+  margin-bottom: 30px;
+}
+/* line 8, ../sass/_oldbrowser.scss */
+.old-browser-wrap .browsers-list li {
+  float: left;
+  text-align: center;
+}
+/* line 13, ../sass/_oldbrowser.scss */
+.old-browser-wrap section {
+  text-align: center;
+}
+/* line 15, ../sass/_oldbrowser.scss */
+.old-browser-wrap section h1 {
+  margin: 25px;
+  font-size: 30px;
+  font-family: "MyriadPro";
+}
+/* line 20, ../sass/_oldbrowser.scss */
+.old-browser-wrap section p {
+  font-family: "MyriadPro";
+}
+/* line 22, ../sass/_oldbrowser.scss */
+.old-browser-wrap section p span {
+  display: block;
+  font-size: 18px;
+  font-weight: 200;
+}
+/* line 28, ../sass/_oldbrowser.scss */
+.old-browser-wrap section a {
+  color: #106494;
+  text-decoration: underline;
+}
+/* line 31, ../sass/_oldbrowser.scss */
+.old-browser-wrap section a:hover {
+  color: #e6772e;
+  text-decoration: none;
+}
+
+/* line 8, ../sass/screen.scss */
+.cf, .old-browser-wrap .browsers-list {
+  *zoom: 1;
+}
+/* line 10, ../sass/screen.scss */
+.cf:before, .old-browser-wrap .browsers-list:before, .cf:after, .old-browser-wrap .browsers-list:after {
+  content: " ";
+  display: table;
+}
+/* line 15, ../sass/screen.scss */
+.cf:after, .old-browser-wrap .browsers-list:after {
+  clear: both;
+}
+
+/* line 20, ../sass/screen.scss */
+body {
+  background: #fff;
+  color: #000;
+}

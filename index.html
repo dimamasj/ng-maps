@@ -1,0 +1,53 @@
+<!doctype html>
+<html ng-app="firstTest">
+<head>
+    <!--<base href="/"/>-->
+    <title>Project1</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/screen.css"/>
+    <script src="js/angular.js"></script>
+    <script src="js/angular-route.js"></script>
+    <script src="js/controllers-http.js"></script>
+    <!--<script src="js/gmaps-controller.js"></script>-->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <style>
+        html, body, #myMap {
+            height: 500px;
+            width: 100%;
+            margin: 0;
+            padding: 0
+        }
+    </style>
+</head>
+<body>
+
+<div ng-controller="MapCtrl as mapPlaces">
+    <div id="myMap"></div>
+</div>
+
+
+
+<!--<div ng-controller="MapCtrl">-->
+    <!--<div id="map-canvas"></div>-->
+<!--</div>-->
+
+
+
+<h1 style="font-size: 36px;margin-bottom: 25px">{{title}}</h1>
+
+<div ng-controller="BarsCtrl as barsPlaces">
+    <ul>
+        <li><a href="#/">Main</a></li>
+        <li><a href="#/contact">Contacts</a></li>
+        <li><a href="#/about">About</a></li>
+    </ul>
+
+    <ng-view></ng-view>
+
+    <hr/>
+
+</div>
+</body>
+</html>
+
+

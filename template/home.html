@@ -1,0 +1,56 @@
+<h1>hello Home</h1>
+
+<input type="text" ng-model="search"/>
+
+<!--<ul>-->
+    <!--&lt;!&ndash;<li ng-repeat="bar in bars | filter:{title:search}">&ndash;&gt;-->
+        <!--<li ng-controller="bar in barsPlaces.bars.getList()">-->
+        <!--<span>{{bar.title}}</span>-->
+        <!--<div style="width: 300px">{{bar.body}}</div>-->
+        <!--<p><span>{{bar.address}}</span></p>-->
+
+        <!--<p><span class="geo">{{bar.geo}}</span></p>-->
+        <!--&lt;!&ndash;<img src="img/300x250-kote.4e8.jpg" alt="cote"/>&ndash;&gt;-->
+        <!--&lt;!&ndash;<img ng-src="{{bar.image}}" alt="{{bar.title}}"/>&ndash;&gt;-->
+        <!--<a href="#/bar/{{bar.id}}" style="display: block;width: 250px;">view details</a>-->
+    <!--</li>-->
+<!--</ul>-->
+
+
+
+<ul>
+    <li ng-repeat="bar in barsPlaces.bars.getList() | filter:{title:search}">
+        <span>{{bar.title}}</span>
+        <div style="width: 300px">{{bar.body}}</div>
+        <p><span>{{bar.address}}</span></p>
+
+        <p><span class="geo">{{bar.geo}}</span></p>
+        <!--<img ng-src="{{bar.image}}" alt="{{bar.title}}"/>-->
+        <a href="#/bar/{{bar.id}}" style="display: block;width: 250px;">view details</a>
+    </li>
+</ul>
+
+<hr/>
+
+
+<table>
+    <a href="" ng-click="sort('title')">Title</a>
+    <tr ng-repeat="bar in barsPlaces.bars.getList() | orderBy:sortField:reverses">
+        <td>{{bar.title}}</td>
+    </tr>
+    <a href="" ng-click="sort('body')">Desc</a>
+    <tr ng-repeat="bar in barsPlaces.bars.getList() | orderBy:sortField:reverses">
+        <td>{{bar.body}}</td>
+    </tr>
+</table>
+
+
+
+<!--<div ng-controller="NotificationBoxController">-->
+    <!--&lt;!&ndash;<button ng-click="showMe();">press  me</button>&ndash;&gt;-->
+    <!--<pre>NotificationBoxController: {{items.getList()|json}}</pre>-->
+<!--</div>-->
+
+<!--<div ng-controller="NotificationController">-->
+    <!--<pre>NotificationController: {{items.getList()|json}}</pre>-->
+<!--</div>-->

@@ -1,0 +1,37 @@
+.old-browser-wrap {
+  width: 755px;
+  margin: 0 auto;
+  overflow: hidden;
+  .browsers-list {
+    margin-bottom: 30px;
+    @extend .cf;
+    li {
+      float: left;
+      text-align: center;
+    }
+  }
+  section {
+    text-align: center;
+    h1 {
+      margin: 25px;
+      font-size: 30px;
+      font-family: "MyriadPro";
+    }
+    p {
+      font-family: "MyriadPro";
+      span {
+        display: block;
+        font-size: 18px;
+        font-weight: 200;
+      }
+    }
+    a {
+      color: #106494;
+      text-decoration: underline;
+      &:hover {
+        color: #e6772e;
+        text-decoration: none;
+      }
+    }
+  }
+}
